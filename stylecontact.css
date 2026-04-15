@@ -1,0 +1,155 @@
+
+.navbar ul {
+    display: flex;          
+    justify-content: center;   
+    list-style: none;          
+    gap: 40px;                 
+    padding: 20px 0;           
+    margin: 0;
+    background-color: #f4ece6; 
+}
+
+.navbar ul li a {
+    text-decoration: none;     
+    color: #8b3e2f;            
+    font-size: 18px;           
+    font-weight: 900;          
+    font-family: Arial, sans-serif;
+    transition: 0.3s;          
+}
+
+
+.navbar ul li a:hover {
+    color: #5a2d2d;          
+    border-bottom: 2px solid #8b3e2f; 
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4e1d2; 
+}
+
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 40px;
+    background-color: #fdfaf6;
+    margin: 40px;
+    border-radius: 10px;
+}
+
+
+.contact-info {
+    width: 45%;
+}
+
+.contact-info h1 {
+    font-size: 32px;
+    color: #8b3e2f;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    color: #555;
+}
+.info h3{
+    color: #8b3e2f;
+
+
+}
+
+.info {
+    margin-top: 20px;
+}
+
+
+.contact-form {
+    width: 45%;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.row input {
+    width: 50%;
+}
+
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+button {
+    width: 120px;
+    padding: 10px;
+    background-color: #8b3e2f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #6e2f23;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: stretch;
+        flex-wrap:wrap;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .row input {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .navbar ul {
+        flex-direction: column; 
+        align-items: center;
+        gap: 15px;
+        padding: 10px 0;
+    }
+}
+
+
